@@ -1,0 +1,121 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #EEEEEE;
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:5rem auto;
+    font-family: 'Ubuntu', sans-serif;
+    color: #396EB0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+.container{
+    height: 100vh;
+    
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #396EB0
+}
+.form{
+    padding:0
+}
+.form-control {
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.form-control input{
+    padding: .4rem;
+    width: 200%;
+    height: 40px;
+    margin-top: .6rem;
+    border: #2E4C6D 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: inherit;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+h2{
+    padding: 1rem;
+}
+
+.form-control i {
+    font-size: .8rem;
+    position: absolute;
+    left:128%;
+    top:56%;
+    visibility: hidden;
+
+}
+.form-control small{
+    font-size: .9rem;
+    position:absolute;
+    top:87%;
+    right:37%;
+    width:100%;
+    visibility: hidden;
+    color:#e74c3c;
+
+}
+.form-control input:focus{
+    outline:0;
+    border-color: #777;
+}
+.form-control.success i.fa-solid fa-circle-check{
+    color:#2ecc71;
+    visibility: visible
+}
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error i.fa-solid fa-circle-exclamation{
+    color:#e74c3c;
+    visibility: visible;
+}
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control.error small {
+    visibility: visible;
+}
+
+button{
+    padding: .4rem;
+    width: 300px;
+    height: 40px;
+    margin-top: .6rem;
+    border: #2E4C6D 1px solid;
+    position:absolute;
+    right: 41%;
+    background-color: #DA1212;
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    color:#DA1212;
+    background-color: transparent;
+    border: #DA1212 solid 1px;
+    transform: translateY(-20%);
+}
